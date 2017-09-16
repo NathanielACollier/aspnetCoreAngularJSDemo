@@ -7,7 +7,7 @@ import { routeConfig} from "./routeConfig";
 import {GeneralService} from "./services";
 
 
-const angularAppName = "plunkerTestApp";
+const angularAppName = "angularJsDemoApp";
 const app = angular.module(angularAppName, ['ngRoute']);
 
 
