@@ -30,7 +30,6 @@ msbuild.wrn
 .vs/
 
 node_modules/
-*.js
 
 #typescript output
 dist/
