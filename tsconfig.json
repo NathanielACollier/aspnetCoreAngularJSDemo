@@ -1,9 +1,13 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "target": "es5",
-      "noImplicitAny": false,
-      "sourceMap": false,
-      "watch": true
-    }
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "lib": [ "es2015", "dom" ],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "outFile": "wwwroot/dist/app.js",
+    "watch": true
+  }
 }
