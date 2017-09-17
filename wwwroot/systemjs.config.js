@@ -20,6 +20,11 @@
             app: {
                 main: './main'
               }
+        }, meta: {
+            "angular":{
+                "format": "global",
+                "exports": "angular"
+            }
         }
     });
 })(this);
