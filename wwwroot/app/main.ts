@@ -5,6 +5,7 @@ import { HomeComponent } from "./components/home";
 import { configES6Promise } from "./configES6Promise";
 import { routeConfig} from "./routeConfig";
 import {GeneralService} from "./services";
+import {TestControlsDatePickerComponent } from './components/controls/testControlsDatePicker';
 
 // import jquery, jquery-ui, and bootstrap so they get loaded
 import * as jquery from "jquery";
@@ -20,6 +21,7 @@ const app = angular.module(angularAppName, ['ngRoute']);
 app.service(GeneralService.angularName, GeneralService);
 // components
 app.component("home", HomeComponent);
+app.component("testControlsDatePicker", TestControlsDatePickerComponent);
 
 app.run(configES6Promise);
 // routes
