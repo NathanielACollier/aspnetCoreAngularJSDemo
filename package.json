@@ -12,7 +12,12 @@
     "angular": "^1.6.3",
     "angular-route": "^1.6.4",
     "es6-shim": "^0.35.3",
-    "systemjs": "^0.20.12"
+    "systemjs": "^0.20.12",
+    "@types/jquery": "^3.2.11",
+    "@types/jqueryui": "^1.11.35",
+    "jquery": "^1.12.4",
+    "jquery-ui-dist": "^1.12.1",
+    "bootstrap": "^3.3.7"
   },
   "scripts": {
 
