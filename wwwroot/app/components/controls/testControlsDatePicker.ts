@@ -4,7 +4,7 @@ import { GeneralService } from "../../services";
 'use strict';
 
 
-export class TestControlsDatePickerComponentController implements ComponentController {
+class TestControlsDatePickerComponentController implements ComponentController {
 
 
     static $inject = [GeneralService.angularName];

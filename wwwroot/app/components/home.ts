@@ -4,7 +4,7 @@ import { GeneralService } from "../services";
 'use strict';
 
 
-export class HomeComponentController implements ComponentController {
+class HomeComponentController implements ComponentController {
 
     message: string;
 
