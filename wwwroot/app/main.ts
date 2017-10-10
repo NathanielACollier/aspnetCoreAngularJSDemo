@@ -8,7 +8,7 @@ import {GeneralService} from "./services";
 import {TestControlsDatePickerComponent } from './components/controls/testControlsDatePicker';
 
 // import jquery, jquery-ui, and bootstrap so they get loaded
-import * as jquery from "jquery";
+import "jquery";
 import "jquery-ui";
 import "bootstrap";
 
