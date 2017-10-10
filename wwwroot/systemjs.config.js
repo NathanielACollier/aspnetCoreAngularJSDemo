@@ -4,6 +4,18 @@
  * Original from: https://github.com/angular/quickstart/blob/master/src/systemjs.config.js
  */
 (function (global) {
+
+    // custom loader to cache bust
+    // see: https://github.com/systemjs/systemjs/issues/1616
+    System.registry.set("my-cache-buster-loader",
+    System.newModule({
+        locate: function(load){
+            var buildText = Date.now().toString(36);
+            return load.address + "?build=" + buildText;
+        }
+    }));
+
+
     System.config({
         paths: {
             // paths serve as alias
@@ -31,6 +43,9 @@
             "jquery":{
                 "format":"global",
                 "exports":"jQuery"
+            },
+            "dist/*":{
+                loader: "my-cache-buster-loader"
             }
         }
     });
